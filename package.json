@@ -1,0 +1,16 @@
+{
+  "name": "reactfs",
+  "version": "1.0.0",
+  "description": "React Fullstack SideBySide Implementation",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd ./src/client && npm start",
+    "server": "cd ./src/server && npm start",
+    "start": "concurrently - kill-others \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
